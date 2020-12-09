@@ -6,7 +6,7 @@ const originalFlavors = [
     "Black Walnut",
     "Burgundy Cherry",
     "Butterscotch Ribbon",
-    "Cherry Macaron",
+    "Cherry Macaroon",
     "Chocolate",
     "Chocolate Almond",
     "Chocolate Chip",
@@ -47,12 +47,10 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
-}    
-
-
-
+function copy(newArrayInfo) {
+    const arrayCopy = [...newArrayInfo];
+    return arrayCopy;
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -66,8 +64,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(count){
+   if (count.length === 31) {
+       return true;
+   } else {
+       return false;
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -116,9 +118,11 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(array, index){
+    return array[index];
 }
+
+console.log(getFlavorByIndex(originalFlavors, 3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
